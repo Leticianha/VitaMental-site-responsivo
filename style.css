@@ -1,0 +1,1137 @@
+@font-face {
+    font-family: 'inter-black';
+    src: url(font/Inter/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: 'inter-regular';
+    src: url(font/Inter/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url(font/Inter/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'inter-extraBold';
+    src: url(font/Inter/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'inter-light';
+    src: url(font/Inter/Inter-Light.ttf);
+}
+
+@font-face {
+    font-family: 'inter-bold';
+    src: url(font/Inter/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'inter-semiBold';
+    src: url(font/Inter/Inter-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Ativa o comportamento de rolagem suave para toda a página */
+}
+
+
+body {
+    background-color: #F9F9F9;
+}
+
+/* HEADER */
+.containerHeader {
+    background-color: #3C4146;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 5%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    padding-right: 5px;
+}
+
+.logo h1 {
+    font-family: 'inter-black';
+    color: #fff;
+    font-size: 30px;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+}
+
+#nav {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav a {
+    font-family: 'inter-regular';
+    font-size: 21px;
+    color: #fff;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 70px;
+    /* left: 10px; */
+    right: 0;
+    background-color: #3c4146;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    width: 131px;
+    box-shadow: 0px 2px 20px 1px #616161;
+    border-bottom-left-radius: 25px 25px;
+    border-bottom-right-radius: 25px 25px;
+}
+
+.popup a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-family: 'inter-regular';
+    font-size: 21px;
+    color: #fff;
+}
+
+.popup a:hover,
+#nav a:hover {
+    color: #b8b8b8;
+    /* Cor do texto ao passar o mouse */
+}
+
+.close-btn {
+    background: none;
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    left: 67px;
+    bottom: 11px;
+}
+
+/* BANNER */
+.containerBanner {
+    background-color: #3C4146;
+    padding-bottom: 98px;
+    border-bottom-left-radius: 550px 100px;
+    border-bottom-right-radius: 550px 100px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.textoBanner h1 {
+    color: #fff;
+    font-family: 'inter-light';
+    font-size: 45px;
+}
+
+.textoBanner h1 span {
+    font-family: 'inter-extraBold';
+}
+
+.textoBanner p {
+    color: #fff;
+    font-family: 'inter-light';
+    font-size: 25px;
+}
+
+.imgBanner img {
+    width: 430px;
+    height: auto;
+}
+
+.linhas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.linhas img {
+    width: 300px;
+}
+
+.linhaUm {
+    position: absolute;
+    left: -46px;
+    bottom: 43px;
+}
+
+.linhaDois {
+    position: absolute;
+    right: 0;
+    bottom: 38px;
+}
+
+.containerNumeracao {
+    background-color: #F9F9F9;
+    position: absolute;
+    width: 121px;
+    height: 121px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: -74px;
+    left: 690px;
+}
+
+.circuloCinza {
+    background-color: #3C4146;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerNumeracao .circuloCinza h1 {
+    color: #F9F9F9;
+    font-family: 'inter-black';
+    font-size: 50px;
+}
+
+/* RECURSOS */
+.containerRecursos {
+    margin-top: 136px;
+    text-align: center;
+}
+
+.containerRecursos {
+    font-family: 'inter-bold';
+    color: #1F2327;
+}
+
+.Recursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 75px;
+}
+
+.boxRecursos {
+    width: 240px;
+    height: 340px;
+    border: 2px solid #3c414667;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.boxRecursos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+}
+
+.boxRecursos:hover::before {
+    opacity: 1;
+}
+
+.boxRecursos::before h1 {
+    font-family: 'inter-bold';
+    font-size: 25px;
+    color: #1F2327;
+    margin-bottom: 10px;
+}
+
+.boxRecursos img {
+    width: 170px;
+    height: auto;
+}
+
+.boxRecursos h1 {
+    font-family: 'inter-bold';
+    font-size: 25px;
+    color: #1F2327;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.boxRecursos::before h1 {
+    font-family: 'inter-bold';
+    font-size: 25px;
+    color: #1F2327;
+    margin-bottom: 10px;
+}
+
+.boxRecursos p {
+    font-family: 'inter-light';
+    font-size: 17px;
+    width: 160px;
+    margin-top: 5px;
+}
+
+.boxDentro {
+    display: none;
+    /* Inicialmente oculto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Cor de fundo para a boxDentro */
+    border-radius: 15px;
+    z-index: 1;
+    /* Para garantir que fique acima da sobreposição */
+}
+
+.boxRecursos:hover .boxDentro {
+    display: flex;
+    /* Torna visível ao passar o mouse */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.juncao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.juncao img {
+    width: 65px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.juncao h1 {
+    font-family: 'inter-bold';
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.divisao {
+    background-color: #B38BDB;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.boxDentro p {
+    font-family: 'inter-light';
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+}
+
+/* CORES */
+
+.coresDoenca {
+    display: grid;
+    align-content: space-between;
+    margin-top: 100px;
+}
+
+.containerCores {
+    font-family: 'inter-bold';
+    color: #1F2327;
+    display: grid;
+    justify-items: stretch;
+    justify-content: center;
+}
+
+.cores {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containerCores p {
+    font-family: 'inter-light';
+    margin: 15px 0 35px;
+    font-size: 17px;
+    /* padding: 0 50px; */
+    max-width: 920px;
+}
+
+.Doencas {
+    display: grid;
+    align-items: center;
+}
+
+.boxDoenca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    width: 460px;
+}
+
+.tituloDoenca {
+    border-radius: 20px;
+    padding: 13px 0;
+    width: 390px;
+    text-align: center;
+    box-shadow: 2px 3px 3px #3c41468e;
+}
+
+.tituloDoenca h1 {
+    font-size: 20px;
+    font-family: 'inter-bold';
+    color: #fff;
+}
+
+.imgDoenca {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #3c41468e;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.imgDoenca h1 {
+    font-family: 'inter-semiBold';
+    opacity: 0.6;
+    font-size: 25px;
+}
+
+.imgDoenca img {
+    width: 45px;
+    height: auto;
+}
+
+.containerAjuda {
+
+    margin-top: 50px;
+    margin-bottom: 90px;
+    display: grid;
+    justify-content: center;
+}
+
+.boxAjuda {
+    background-image: linear-gradient(to right, #1D2022, #7997B2);
+    height: 430px;
+    border-radius: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 70px;
+}
+
+.infos h1 {
+    color: #fff;
+    font-family: 'inter-semiBold';
+    width: 260px;
+    font-size: 35px;
+    text-align: left;
+}
+
+.infos h1 span {
+    font-family: 'inter-black';
+}
+
+.infos p {
+    font-family: 'inter-regular';
+    color: #fff;
+    font-size: 17px;
+    text-align: justify;
+    width: 445px;
+    margin: 15px 0;
+}
+
+.infos a {
+    text-decoration: none;
+}
+
+.infos button {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 0px 40px;
+    width: 170px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.infos button h1 {
+    color: #292C2E;
+    font-family: 'inter-bold';
+    font-size: 26px;
+    padding: 5px 0;
+}
+
+.infos button i {
+    font-size: 20px;
+}
+
+/* RESPONSIVO */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .menu-bar {
+        display: none;
+    }
+
+    #nav {
+        background-color: green;
+    }
+
+    .imgBanner img {
+        width: 360px;
+    }
+
+    .banner {
+        justify-content: space-evenly;
+    }
+
+    .textoBanner p {
+        font-size: 22px;
+    }
+
+    .linhaUm {
+        bottom: 99px;
+    }
+
+    .linhaDois {
+        bottom: 89px;
+    }
+
+    .containerNumeracao {
+        bottom: 0px;
+        left: 562px;
+    }
+
+    .Recursos {
+        padding: 75px 55px 0;
+    }
+
+    .boxRecursos {
+        width: 235px;
+        height: 320px;
+    }
+
+    .boxAjuda {
+        padding: 0px 26px;
+    }
+
+    .img img {
+        width: 400px;
+    }
+
+    .infos p {
+        display: hidden;
+    }
+
+    .boxAjuda {
+        padding: 0px 20px;
+    }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 1020px) {
+    .logo h1 {
+        font-size: 29px;
+    }
+
+    .logo img {
+        width: 118px;
+    }
+
+    #nav {
+        background-color: purple;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .imgBanner img {
+        width: 325px;
+    }
+
+    .textoBanner h1 {
+        font-size: 40px;
+    }
+
+    .textoBanner p {
+        font-size: 20px;
+    }
+
+    .linhas img {
+        width: 250px;
+    }
+
+    .linhaUm {
+        bottom: 131px;
+    }
+
+    .linhaDois {
+        bottom: 116px;
+    }
+
+    .containerNumeracao {
+        width: 100px;
+        height: 100px;
+        bottom: 50px;
+        left: 441px;
+    }
+
+    .circuloCinza {
+        width: 80px;
+        height: 80px;
+    }
+
+    .Recursos {
+        padding: 50px 50px;
+    }
+
+    .boxRecursos {
+        width: 190px;
+        height: 288px;
+    }
+
+    .containerCores p {
+        max-width: 840px;
+    }
+
+    .tituloDoenca {
+        width: 310px;
+    }
+
+    .cores {
+        justify-content: stretch;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .logo img {
+        width: 111px;
+    }
+
+    #nav {
+        background-color: orange;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .banner {
+        justify-content: space-evenly;
+    }
+
+    .imgBanner img {
+        width: 290px;
+    }
+
+    .textoBanner h1 {
+        font-size: 35px;
+        width: 300px;
+    }
+
+    .textoBanner p {
+        font-size: 18px;
+    }
+
+    .linhas img {
+        width: 222px;
+    }
+
+    .linhaUm {
+        bottom: 180px;
+    }
+
+    .linhaDois {
+        bottom: 178px;
+    }
+
+    .containerNumeracao {
+        width: 100px;
+        height: 100px;
+        bottom: 93px;
+        left: 404px;
+    }
+
+    .circuloCinza {
+        width: 80px;
+        height: 80px;
+    }
+
+    .containerRecursos {
+        margin-top: 100px;
+    }
+
+    .Recursos {
+        display: flex;
+        overflow-x: auto;
+        /* Adiciona uma barra de rolagem horizontal quando necessário */
+        scroll-snap-type: x mandatory;
+        /* Força o scroll a parar em cada item */
+        -webkit-overflow-scrolling: touch;
+        /* Adiciona rolagem suave para dispositivos iOS */
+        padding-top: 75px;
+        margin-bottom: 20px;
+        /* Adicione margem inferior para evitar cortes */
+        margin-left: 64px;
+        margin-right: 17px;
+    }
+
+    .boxRecursos {
+        width: 209px;
+        height: 282px;
+        border: 2px solid #3c414667;
+        border-radius: 15px;
+        flex-shrink: 0;
+        /* Evita que os itens sejam reduzidos para caber */
+        margin-right: 50px;
+        /* Adiciona espaçamento entre os itens */
+        scroll-snap-align: start;
+        /* Define onde o scroll deve parar */
+        position: relative;
+    }
+
+    .containerCores {
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+    }
+
+    .containerCores p {
+        max-width: 750px;
+    }
+
+    .tituloDoenca {
+        width: 245px;
+    }
+
+    .cores {
+        justify-content: stretch;
+    }
+
+    .boxDoenca {
+        justify-content: center;
+        width: 430px;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 767px) {
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    .logo img {
+        width: 105px;
+    }
+
+    #nav {
+        background-color: yellow;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .linhas img {
+        width: 200px;
+    }
+
+    .linhaUm {
+        bottom: 200px;
+    }
+
+    .linhaDois {
+        bottom: 200px;
+    }
+
+    .imgBanner img {
+        width: 270px;
+    }
+
+    .banner {
+        justify-content: space-evenly;
+    }
+
+    .textoBanner h1 {
+        font-size: 32px;
+    }
+
+    .textoBanner p {
+        font-size: 18px;
+        width: 295px;
+    }
+
+    .containerNumeracao {
+        width: 100px;
+        height: 100px;
+        bottom: 125px;
+        left: 355px;
+    }
+
+    .circuloCinza {
+        width: 80px;
+        height: 80px;
+    }
+
+    .Recursos {
+        display: flex;
+        overflow-x: auto;
+        /* Adiciona uma barra de rolagem horizontal quando necessário */
+        scroll-snap-type: x mandatory;
+        /* Força o scroll a parar em cada item */
+        -webkit-overflow-scrolling: touch;
+        /* Adiciona rolagem suave para dispositivos iOS */
+        padding-top: 75px;
+        margin-bottom: 20px;
+        /* Adicione margem inferior para evitar cortes */
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    .boxRecursos {
+        width: 209px;
+        height: 282px;
+        border: 2px solid #3c414667;
+        border-radius: 15px;
+        flex-shrink: 0;
+        /* Evita que os itens sejam reduzidos para caber */
+        margin-right: 50px;
+        /* Adiciona espaçamento entre os itens */
+        scroll-snap-align: start;
+        /* Define onde o scroll deve parar */
+        position: relative;
+    }
+
+    .cores {
+        display: flex;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+    }
+
+    .Doencas {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0 77px;
+    }
+
+    .tituloDoenca {
+        width: 320px;
+    }
+
+    .boxDoenca {
+        justify-content: left;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 719px) {
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        background-color: blue;
+    }
+
+    .menu-bar i {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .containerNumeracao {
+        display: none;
+    }
+
+    .imgBanner img {
+        width: 210px;
+    }
+
+    .textoBanner p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .banner {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        flex-direction: column;
+    }
+
+    .textoBanner h1 {
+        font-size: 31px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .imgBanner img {
+        width: 250px;
+    }
+
+    .linhas img {
+        width: 250px;
+    }
+
+    .linhaUm {
+        bottom: 92px;
+    }
+
+    .linhaDois {
+        bottom: 92px;
+    }
+
+    .Recursos {
+        display: flex;
+        overflow-x: auto;
+        /* Adiciona uma barra de rolagem horizontal quando necessário */
+        scroll-snap-type: x mandatory;
+        /* Força o scroll a parar em cada item */
+        -webkit-overflow-scrolling: touch;
+        /* Adiciona rolagem suave para dispositivos iOS */
+        padding-top: 75px;
+        margin-bottom: 20px;
+        /* Adicione margem inferior para evitar cortes */
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    .boxRecursos {
+        width: 209px;
+        height: 282px;
+        border: 2px solid #3c414667;
+        border-radius: 15px;
+        flex-shrink: 0;
+        /* Evita que os itens sejam reduzidos para caber */
+        margin-right: 50px;
+        /* Adiciona espaçamento entre os itens */
+        scroll-snap-align: start;
+        /* Define onde o scroll deve parar */
+        position: relative;
+    }
+
+    .cores {
+        display: flex;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+    }
+
+    .Doencas {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0 77px;
+    }
+
+    .tituloDoenca {
+        width: 300px;
+    }
+
+    .boxDoenca {
+        justify-content: left;
+    }
+
+    .coresDoenca {
+        margin-left: -50px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        background-color: pink;
+    }
+
+    .menu-bar i {
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .containerNumeracao {
+        display: none;
+    }
+
+    .containerNumeracao {
+        display: none;
+    }
+
+    .imgBanner img {
+        width: 210px;
+    }
+
+    .textoBanner p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .banner {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        flex-direction: column;
+    }
+
+    .textoBanner h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .imgBanner img {
+        width: 230px;
+    }
+
+    .linhas img {
+        width: 210px;
+    }
+
+    .linhaUm {
+        bottom: 128px;
+    }
+
+    .linhaDois {
+        bottom: 126px;
+    }
+
+    .Recursos {
+        display: flex;
+        overflow-x: auto;
+        /* Adiciona uma barra de rolagem horizontal quando necessário */
+        scroll-snap-type: x mandatory;
+        /* Força o scroll a parar em cada item */
+        -webkit-overflow-scrolling: touch;
+        /* Adiciona rolagem suave para dispositivos iOS */
+        padding-top: 75px;
+        margin-bottom: 20px;
+        /* Adicione margem inferior para evitar cortes */
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    .boxRecursos {
+        width: 209px;
+        height: 282px;
+        border: 2px solid #3c414667;
+        border-radius: 15px;
+        flex-shrink: 0;
+        /* Evita que os itens sejam reduzidos para caber */
+        margin-right: 50px;
+        /* Adiciona espaçamento entre os itens */
+        scroll-snap-align: start;
+        /* Define onde o scroll deve parar */
+        position: relative;
+    }
+
+    .containerRecursos {
+        margin-top: 65px;
+    }
+
+    .containerRecursos h1 {
+        font-size: 25px;
+    }
+
+    .cores {
+        display: flex;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+    }
+
+    .Doencas {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0 77px;
+    }
+
+    .tituloDoenca {
+        width: 300px;
+    }
+
+    .boxDoenca {
+        justify-content: left;
+        width: 338px;
+    }
+
+    .coresDoenca {
+        margin-left: -50px;
+    }
+
+}
