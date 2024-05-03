@@ -5,9 +5,11 @@ function openMenu() {
     } else {
         popup.style.display = "block";
     }
-}
-
-function closeMenu() {
+  }
+  
+  function closeMenu() {
     var popup = document.getElementById("popup");
     popup.style.display = "none";
-}
+  }
+
+  
